@@ -1,0 +1,35 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+
+<!--
+`slist-button`
+Button component for slist web app
+
+@demo demo/index.html
+-->
+
+<dom-module id="slist-button">
+
+  <link rel="import" type="css" href="style.css">
+
+  <template>
+  	  	<paper-button id="slist-button">{{text}}</paper-button>
+      </template>
+
+  <script>
+  Polymer({
+
+    is: 'slist-button',
+
+    properties: {
+      text: {
+        type: String
+      },
+    },
+
+    confirmClick: function () {
+      alert('This is after paper-button click');
+    }
+  });
+</script>
+</dom-module>

@@ -1,0 +1,49 @@
+
+h3.mapHeading {
+  text-align: center;
+  font-family: Calibri;
+  font-weight: 50;
+}
+
+google-map {
+  display: block;
+  height: 250px;
+  width: 250px;
+}
+
+footer.mapFooter {
+  font-size: 9px;
+  font-family: Arial;
+  font-kerning: 1px;
+}
+
+slist-button.switchButton {
+	text-transform: none;
+  color: white;
+	background: #00bfff;
+	border-radius: 2px;
+	border-style: solid;
+  border-width: 2px;
+  border-color: #87ceeb;
+	font-family: Calibri;
+	font-variant: normal;
+	font-size: 15px;
+	font-weight: normal;
+	height: 70px;
+  width: 420px;
+}
+
+slist-button.switchButton:hover {
+	color: white;
+	background: #00bf44;
+	border-radius: 2px;
+	border-style: solid;
+  border-width: 2px;
+  border-color: #87ceeb;
+	font-family: Calibri;
+	font-variant: normal;
+	font-size: 15px;
+	font-weight: normal;
+	height: 70px;
+  width: 420px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Map App</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="mobile-web-app-capable" content="yes" />
+  
+  <meta name="application-name" content="Map App">
+
+  
+  <script src="app/getjson.js"></script>
+
+  <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+  <link rel="import" href="app/slist-button.html">
+  <link rel="import" href="bower_components/google-map/google-map.html">
+  <link rel="import" href="bower_components/google-map/google-map-marker.html">
+
+  <!-- Polyfill(s) for older browsers -->
+  <script src="node_modules/core-js/client/shim.min.js"></script>
+
+  <script src="node_modules/zone.js/dist/zone.js"></script>
+  <script src="node_modules/reflect-metadata/Reflect.js"></script>
+  <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+<link rel="stylesheet" type="text/css" href="./styles/style.css">
+
+  <script src="systemjs.config.js"></script>
+  <script>
+    document.addEventListener('WebComponentsReady', function() {
+      System.import('app').catch(function(err) {
+        console.error(err);
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <map-app>Loading...</map-app>
+</body>
+
+</html>
